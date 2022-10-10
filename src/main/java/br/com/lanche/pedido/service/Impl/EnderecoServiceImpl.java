@@ -1,6 +1,6 @@
 package br.com.lanche.pedido.service.Impl;
 
-import br.com.lanche.pedido.Repository.EnderecoRepository;
+import br.com.lanche.pedido.repository.EnderecoRepository;
 import br.com.lanche.pedido.entity.EnderecoEntity;
 import br.com.lanche.pedido.entity.Request.EnderecoRequest;
 import br.com.lanche.pedido.entity.Response.EnderecoResponse;

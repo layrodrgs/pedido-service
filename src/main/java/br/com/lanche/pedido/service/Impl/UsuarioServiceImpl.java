@@ -1,6 +1,6 @@
 package br.com.lanche.pedido.service.Impl;
 
-import br.com.lanche.pedido.Repository.UsuarioRepository;
+import br.com.lanche.pedido.repository.UsuarioRepository;
 import br.com.lanche.pedido.entity.Request.UsuarioRequest;
 import br.com.lanche.pedido.entity.Response.UsuarioResponse;
 import br.com.lanche.pedido.entity.UsuarioEntity;

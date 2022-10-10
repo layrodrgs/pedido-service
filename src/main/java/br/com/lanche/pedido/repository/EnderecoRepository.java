@@ -1,4 +1,4 @@
-package br.com.lanche.pedido.Repository;
+package br.com.lanche.pedido.repository;
 
 import br.com.lanche.pedido.entity.EnderecoEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
