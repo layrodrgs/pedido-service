@@ -12,7 +12,6 @@ import lombok.NoArgsConstructor;
 public class EnderecoResponse {
 
     private String numero;
+
     private String logradouro;
-    private String complemento;
-    private String cep;
 }
