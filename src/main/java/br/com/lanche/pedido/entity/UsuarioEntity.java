@@ -14,6 +14,7 @@ import javax.persistence.OneToOne;
 @NoArgsConstructor
 @Builder
 public class UsuarioEntity extends BaseEntity{
+
     private String nome;
 
     @OneToOne

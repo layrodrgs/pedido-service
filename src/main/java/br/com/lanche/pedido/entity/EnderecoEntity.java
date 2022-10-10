@@ -14,8 +14,7 @@ import javax.persistence.Entity;
 @Builder
 public class EnderecoEntity extends BaseEntity{
 
-    private String numero;
     private String logradouro;
-    private String complemento;
-    private String cep;
+
+    private String numero;
 }

@@ -16,10 +16,14 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Builder
 public class ItemPedidoEntity extends BaseEntity {
+
     private String nomeProduto;
+
     private BigDecimal precoProduto;
+
     @ManyToOne
     private PedidoEntity pedido;
+
     @OneToOne
     private UsuarioEntity usuario;
 
