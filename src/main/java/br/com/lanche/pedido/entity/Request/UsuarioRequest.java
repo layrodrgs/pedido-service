@@ -17,4 +17,6 @@ public class UsuarioRequest {
     @NotEmpty
     @ApiModelProperty(example = "Layanne")
     private String nome;
+
+    private Long enderecoId;
 }
