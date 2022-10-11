@@ -10,7 +10,7 @@ public class PicPayLinkPagamentoStrategyImpl implements GeradorLinkPagamentoStra
 
     @Override
     public String gerarlinkPagamento(PedidoRequest pedido) {
-        return null;
+        return "picpay";
     }
 
     @Override
