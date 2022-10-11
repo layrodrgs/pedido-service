@@ -16,9 +16,9 @@ import java.math.BigDecimal;
 @Builder
 public class EntregaRequest {
 
-    @ApiModelProperty(position = 1, example = "698dc19d489c4e4db73e28a713eab07b")
+    @ApiModelProperty(position = 1, example = "6")
     @NotEmpty
-    private String enderecoEntregaId;
+    private Long enderecoEntregaId;
 
     @ApiModelProperty(position = 2, example = "5.50")
     @Digits(integer = 4, fraction = 2)

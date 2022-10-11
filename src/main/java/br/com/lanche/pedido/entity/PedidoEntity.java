@@ -3,9 +3,9 @@ package br.com.lanche.pedido.entity;
 import br.com.lanche.pedido.entity.Request.enums.FormaDePagamentoEnum;
 import br.com.lanche.pedido.entity.Request.enums.StatusPedidoEnum;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -20,7 +20,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
+@SuperBuilder
 public class PedidoEntity extends BaseEntity {
 
     @OneToMany(cascade = CascadeType.PERSIST)
@@ -36,7 +36,7 @@ public class PedidoEntity extends BaseEntity {
     private String linkPagamento;
 
     @Enumerated(EnumType.STRING)
-    private FormaDePagamentoEnum formaPagamento;
+    private FormaDePagamentoEnum formaDePagamento;
 
     @Enumerated(EnumType.STRING)
     private StatusPedidoEnum statusPedido;

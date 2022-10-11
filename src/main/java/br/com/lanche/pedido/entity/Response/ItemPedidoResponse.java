@@ -14,5 +14,7 @@ import java.math.BigDecimal;
 public class ItemPedidoResponse {
 
     private String nomeProduto;
+
     private BigDecimal precoProduto;
+
 }

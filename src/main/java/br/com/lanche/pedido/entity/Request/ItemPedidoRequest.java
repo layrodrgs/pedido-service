@@ -26,7 +26,7 @@ public class ItemPedidoRequest {
     @Digits(integer = 4, fraction = 2)
     private BigDecimal precoProduto;
 
-    @ApiModelProperty(position = 3, example = "698dc19d489c4e4db73e28a713eab07b")
+    @ApiModelProperty(position = 3, example = "2")
     @NotEmpty
-    private String usuarioId;
+    private Long usuarioId;
 }
