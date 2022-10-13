@@ -1,10 +1,13 @@
 package br.com.lanche.pedido.controller;
 
 import br.com.lanche.pedido.entity.Request.PedidoRequest;
+import br.com.lanche.pedido.entity.Response.CalculoPedidoResponse;
 import br.com.lanche.pedido.entity.Response.PedidoResponse;
 import br.com.lanche.pedido.service.PedidoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,5 +25,10 @@ public class PedidoController {
     @PostMapping
     public ResponseEntity<PedidoResponse> criarPedido(final @RequestBody @Valid PedidoRequest pedido){
         return ResponseEntity.ok(service.realizarPedido(pedido));
+    }
+
+    @GetMapping("{identificacao}/total")
+    public ResponseEntity<CalculoPedidoResponse> obeterValorTotalPedido(@PathVariable final String identificacao) {
+        return ResponseEntity.ok(this.service.calcularValorPedido(identificacao));
     }
 }

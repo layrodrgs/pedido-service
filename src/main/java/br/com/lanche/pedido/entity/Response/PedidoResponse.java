@@ -26,5 +26,5 @@ public class PedidoResponse {
 
     private StatusPedidoEnum statusPedido;
 
-    private String identificacaoPagamento;
+    private String identificacaoPedido;
 }

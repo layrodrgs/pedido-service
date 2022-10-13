@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -41,7 +42,8 @@ public class PedidoEntity extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private StatusPedidoEnum statusPedido;
 
-    private String identificacaoPagamento;
+    @Column(unique = true)
+    private String identificacaoPedido;
 
     private BigDecimal acrescimoPorcentagem;
 

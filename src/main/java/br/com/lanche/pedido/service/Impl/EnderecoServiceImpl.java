@@ -21,7 +21,9 @@ public class EnderecoServiceImpl implements EnderecoService {
 
     @Override
     public EnderecoResponse cadastrarEndereco(final EnderecoRequest endereco) {
+        log.info("Cadastrando um endereço");
         EnderecoEntity save = this.repository.save(this.mapper.map(endereco));
+        log.info("Cadastro de endereço realizado com sucesso: '{}'", save.getId());
         return this.mapper.map(save);
     }
 }

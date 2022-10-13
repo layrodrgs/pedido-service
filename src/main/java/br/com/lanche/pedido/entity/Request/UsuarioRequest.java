@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 @Data
 @AllArgsConstructor
@@ -18,5 +19,6 @@ public class UsuarioRequest {
     @ApiModelProperty(example = "Layanne")
     private String nome;
 
+    @NotNull
     private Long enderecoId;
 }

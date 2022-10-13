@@ -27,6 +27,6 @@ public class ItemPedidoRequest {
     private BigDecimal precoProduto;
 
     @ApiModelProperty(position = 3, example = "2")
-    @NotEmpty
+    @NotNull
     private Long usuarioId;
 }

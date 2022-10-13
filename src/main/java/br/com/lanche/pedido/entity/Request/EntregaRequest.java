@@ -7,7 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.Digits;
-import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 @Data
@@ -17,12 +17,12 @@ import java.math.BigDecimal;
 public class EntregaRequest {
 
     @ApiModelProperty(position = 1, example = "6")
-    @NotEmpty
+    @NotNull
     private Long enderecoEntregaId;
 
     @ApiModelProperty(position = 2, example = "5.50")
     @Digits(integer = 4, fraction = 2)
-    @NotEmpty
+    @NotNull
     private BigDecimal valorEntrega;
 
 }
